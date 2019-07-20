@@ -1,0 +1,3 @@
+def datastuff(): 
+    return null
+    
