@@ -3,11 +3,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>What should I watch on Netflix?</title>
+    <title>Netflix Trivia Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
     
-    <h1> What should I watch? </h1>
+    <header class="title"> NETFLIX Trivia Game </header>
+    <div class="start">
+        <div class="status">
+            <ul>
+                <li>Questions: <span class="js-question-num">0</span></li>
+                <li>Score: <span class="js-score">0</span></li>
+            </ul>
+        </div>
+    </div>
+    <main class="main-content">
+        <div class="game-levels">
+            <h2>What level are you?</h2>
+            <ul>
+                <li>
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png" alt="Netflix Superhero Icon">
+                    <span class="caption">Netflix Pro</span>
+                </li>
+                <li>
+                    <img src="https://pbs.twimg.com/media/CW2i0pJW4AEYFI3.png" alt="Netflix General Icon">
+                    <span class="caption">Basic</span>
+                </li>
+                <li>
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/64623a33850498.56ba69ac2a6f7.png" alt="Netflix Kid Icon">
+                    <span class="caption">Kids</span></li>
+                <li>
+                    <img src="https://cdn3.iconfinder.com/data/icons/gray-toolbar-4/512/create-512.png" alt="Netflix Add Icon">
+                    <span class="caption">Add</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="begin">
+            <button type="button" class="startButton">Click to Begin!</button>
+        </div>
+        <div class="questions"></div>
+    </main>
     
 </body>
 </html>
