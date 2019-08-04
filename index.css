@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/dark-honeycomb.png);
+    background: black;
 
 }
 
@@ -60,6 +60,7 @@ h2 {
 /* Large screens */
 .game-levels {
     height: 300px;
+    padding: 0px 50px;
 }
 
 .game-levels ul {
@@ -84,7 +85,8 @@ h2 {
 /* Small screens */
 @media all and (max-width: 500px) {
     .game-levels {
-        height: 100vh;
+        height: 880px;
+        padding: 20px;
     }
     .game-levels ul {
       /* On small screens, we are no longer using row direction but column */
@@ -124,4 +126,39 @@ button {
 
 button:hover, button:focus {
     color: #ebca52
+}
+
+.questions {
+    color: white;
+    display: inline-block;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    margin: 0px 15px;
+}
+
+label {
+    display:flex;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.resultPrompt {
+    color: white;
+    border-bottom: 6px solid red;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.results {
+    color: white;
+    border-bottom: 6px solid red;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 5px;
 }
