@@ -133,6 +133,13 @@ button:hover, button:focus {
     display: inline-block;
 }
 
+.questionOptions {
+    transition: all 0.3s ease;
+    border: 2px solid lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+
 fieldset {
     border: none;
 }
