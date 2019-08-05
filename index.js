@@ -93,16 +93,16 @@ function renderNextQuestion () {
 function renderResults () {
     console.log('ending results');
     if (score >= 8) {
-        $('.main-Content').html(`<div class='results'>You're a Netflix Pro!</div> <button class='restartButton'>Restart Quiz</button></div>`)
+        $('.main-Content').html(`<div class='results'>You're a Netflix Pro!</div> <button class='restartButton'>Restart Quiz</button>`)
     } else if (score < 8 && score >= 5) {
-        $('.main-Content').html(`<div class='results'>You're basic!</div> <button class='restartButton'>Restart Quiz</button></div>`)
+        $('.main-Content').html(`<div class='results'>You're basic!</div> <button class='restartButton'>Restart Quiz</button>`)
     } else {
-        $('.main-Content').html(`<div class='results'>Your Netflix level is elementary.</div> <button class='restartButton'>Restart Quiz</button></div>`)
+        $('.main-Content').html(`<div class='results'>Your Netflix level is elementary.</div> <button class='restartButton'>Restart Quiz</button>`)
     }   
 }
 
 function restartQuiz () {
-    $(".main").on("click", "restartButton", function (){
+    $(".restartButton").on("click", function (){
         location.reload();
     });
 }

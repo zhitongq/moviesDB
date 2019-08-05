@@ -125,7 +125,8 @@ button {
 }
 
 button:hover, button:focus {
-    color: #ebca52
+    color: #ebca52;
+    background: lightcoral;
 }
 
 .questions {
@@ -134,10 +135,15 @@ button:hover, button:focus {
 }
 
 .questionOptions {
-    transition: all 0.3s ease;
+    transition: 0.2s all linear;
     border: 2px solid lightblue;
     padding: 5px;
     margin: 5px;
+}
+
+.questionOptions:hover {
+    transition: 0.2s all linear;
+    background: #555;
 }
 
 fieldset {
@@ -164,6 +170,10 @@ label {
 
 .results {
     color: white;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 6px solid red;
     background-color: lightgrey;
     padding: 20px;
